@@ -1,6 +1,6 @@
 cask "appswitcher" do
-  version "0.2.0"
-  sha256 "e0303f329ac4d7b6a5a4ea0a49e9d0aa11dcc5dd71262cb5f9ad36ceac578afd"
+  version "0.2.4"
+  sha256 "75cf2e09f61d74a974baae978da3e0428615d700ccce9176218bef0e1f371235"
 
   url "https://download.apps.dynacom.dev/appswitcher/AppSwitcher-#{version}.dmg"
   name "AppSwitcher"
