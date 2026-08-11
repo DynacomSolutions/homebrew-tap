@@ -12,6 +12,11 @@ cask "appswitcher" do
 
   app "AppSwitcher.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/AppSwitcher.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/com.dynacom.appswitcher",
     "~/Library/Preferences/com.dynacom.appswitcher.plist",
