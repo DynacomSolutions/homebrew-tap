@@ -1,11 +1,11 @@
 cask "appswitcher" do
-  version "0.2.9"
-  sha256 "a478dbea5476ef9fb61a8638613f9c8b454196d601779b9be51c46d18058a649"
+  version "0.2.10"
+  sha256 "8450a467acabfde0a9a2662c468863850950395f18cfbbafff7c431c47a42a84"
 
-  url "https://download.apps.dynacom.dev/appswitcher/AppSwitcher-#{version}.dmg"
+  url "https://dynacom.studio/download/appswitcher/AppSwitcher-#{version}.dmg"
   name "AppSwitcher"
   desc "Multi-level, customisable Alt+Tab switcher for macOS"
-  homepage "https://download.apps.dynacom.dev/appswitcher"
+  homepage "https://dynacom.studio/download/appswitcher"
 
   depends_on macos: :ventura
   depends_on arch: :arm64
