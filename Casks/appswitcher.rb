@@ -1,6 +1,6 @@
 cask "appswitcher" do
-  version "0.2.12"
-  sha256 "7713e2949bc7e8782c516379f0033d9cc18cf3aa5c34f577bd8c3526c25365a0"
+  version "0.2.13"
+  sha256 "31c2093f24c976c5e7b11775857a089677c64b7801cc2dcd21ac48bbab0224e3"
 
   url "https://dynacom.studio/download/appswitcher/AppSwitcher-#{version}.dmg"
   name "AppSwitcher"
@@ -11,11 +11,6 @@ cask "appswitcher" do
   depends_on arch: :arm64
 
   app "AppSwitcher.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/AppSwitcher.app"]
-  end
 
   zap trash: [
     "~/Library/Application Support/com.dynacom.appswitcher",
